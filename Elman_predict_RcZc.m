@@ -70,4 +70,4 @@ legend('Z真实值','Z预测值');
 %ylim([-0.02,0.02]);%
 ylim([min(TestOutput(2,:))-0.01,max(TestOutput(2,:))+0.01]);
 
-save('Elman_RNN_RcZc.mat','net');
+save('Elman_predict_RcZc.mat','net');
