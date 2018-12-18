@@ -41,7 +41,7 @@ net_1 = newelm(minmax(pn),[15,2],{'tansig','purelin'},'traingda');% traingd/trai
 net_1.trainParam.show = 50;  %显示频率，这里设置为每训练20次显示一次
 net_1.trainParam.lr = 0.02;  %学习率
 net_1.trainParam.mc = 0.9;  %动量因子
-net_1.trainParam.epochs =50000;%10000;  
+net_1.trainParam.epochs =80000;%10000;  
 net_1.trainParam.goal = 1e-3;%2*1e-3;  
 net=init(net_1);%初始化网络  
 %训练网络  
