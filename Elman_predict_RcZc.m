@@ -55,19 +55,19 @@ E =TestOutput - TestResult;
 MSE=mse(E);%计算均方误差
 
 figure(1);
-plot(TestOutput(1,1:20:end),'bo');
+plot((1:length(TestOutput(1,1:4:end)))*0.02,TestOutput(1,1:4:end),'bo');
 hold on;
-plot(TestResult(1,1:20:end),'r*');
+plot((1:length(TestOutput(1,1:4:end)))*0.02,TestResult(1,1:4:end),'r*');
 legend('R真实值','R预测值');
 %ylim([0.98,1.02]);%
 ylim([min(TestOutput(1,:))-0.01,max(TestOutput(1,:))+0.01]);
 
 figure(2);
-plot(TestOutput(2,1:20:end),'bo');
+plot((1:length(TestOutput(1,1:4:end)))*0.02,TestOutput(2,1:4:end),'bo');
 hold on;
-plot(TestResult(2,1:20:end),'r*');
+plot((1:length(TestOutput(1,1:4:end)))*0.02,TestResult(2,1:4:end),'r*');
 legend('Z真实值','Z预测值');
 %ylim([-0.02,0.02]);%
 ylim([min(TestOutput(2,:))-0.01,max(TestOutput(2,:))+0.01]);
 
-save('Elman_predict_RcZc.mat','net');
+%save('Elman_predict_RcZc.mat','net');
